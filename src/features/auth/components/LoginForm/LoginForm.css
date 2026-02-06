@@ -161,3 +161,26 @@
     align-items: flex-start;
   }
 }
+
+@media (max-height: 700px) {
+  .login-form {
+    gap: 1rem;
+  }
+
+  .login-form-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .login-form-subtitle {
+     display: none; /* Hide subtitle on very short screens to save space */
+  }
+
+  .login-form-fields {
+    gap: 0.75rem;
+  }
+  
+  .login-form-options {
+    gap: 0.25rem;
+  }
+}
