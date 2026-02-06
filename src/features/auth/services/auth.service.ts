@@ -98,7 +98,7 @@ class AuthService {
         { refreshToken },
       );
       return response.data.token;
-    } catch (error) {
+    } catch {
       throw new Error('Error al refrescar el token');
     }
   }

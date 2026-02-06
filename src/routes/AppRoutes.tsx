@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { LoginPage, useAuth } from '../features/auth';
 import { DashboardPage } from '../features/dashboard';
 
+
 // 404 Page
 const NotFoundPage: React.FC = () => (
   <div style={{ padding: '2rem', textAlign: 'center' }}>

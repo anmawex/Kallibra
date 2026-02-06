@@ -1,19 +1,19 @@
 import { Header } from '../../components';
 // import { FilterPanel } from '@/features/filters';
 // import { StatsSummary, StatusDistributionChart } from '@/features/insights';
-// import { TransactionsTable, useTransactions } from '@/features/transactions';
+import { TransactionsTable, useTransactions } from '@/features/transactions';
 
 export const DashboardPage = () => {
-  // const {
-  //   filteredTransactions,
-  //   filters,
-  //   setFilters,
-  //   updateTransactionStatus,
-  //   bulkUpdateStatus,
-  //   refreshData,
-  //   totalCount,
-  //   filteredCount,
-  // } = useTransactions();
+  const {
+    filteredTransactions,
+    // filters,
+    // setFilters,
+    updateTransactionStatus,
+    bulkUpdateStatus,
+    // refreshData,
+    // totalCount,
+    // filteredCount,
+  } = useTransactions();
 
   const totalCount = 0;
   const refreshData = () => {};
@@ -34,13 +34,13 @@ export const DashboardPage = () => {
         totalCount={totalCount}
       /> */}
       
-      {/* <div className="flex-1 overflow-hidden">
+      <div className="flex-1 overflow-hidden">
         <TransactionsTable
           transactions={filteredTransactions}
           onUpdateStatus={updateTransactionStatus}
           onBulkUpdateStatus={bulkUpdateStatus}
         />
-      </div> */}
+      </div>
     </div>
   );
 };
