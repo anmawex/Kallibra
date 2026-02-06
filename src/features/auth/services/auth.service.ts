@@ -2,7 +2,7 @@ import axios from 'axios';
 import type { LoginCredentials, AuthResponse } from '../types/auth.types';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000/api';
-const USE_MOCK = import.meta.env.VITE_USE_MOCK === 'true' || import.meta.env.DEV;
+const USE_MOCK = import.meta.env.VITE_USE_MOCK !== 'false'; // Default to mock for demo purposes
 
 // Usuarios de prueba para desarrollo
 const MOCK_USERS = [
