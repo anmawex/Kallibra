@@ -10,6 +10,134 @@
     "error": "Error",
     "success": "Éxito"
   },
+  "landing": {
+    "nav": {
+      "home": "Inicio",
+      "features": "Características",
+      "highlights": "Destacados",
+      "pricing": "Precios",
+      "login": "Iniciar Sesión",
+      "register": "Solicitar Acceso"
+    },
+    "hero": {
+      "badge": "Nueva Versión Disponible",
+      "titleLight": "Simplifica tu",
+      "titleBold": "Conciliación Financiera",
+      "description": "Automatiza el cruce de transacciones, elimina errores manuales y obtén información en tiempo real sobre tus operaciones financieras con nuestra poderosa plataforma.",
+      "ctaPrimary": "Comenzar",
+      "ctaSecondary": "Saber Más",
+      "trustedBy": "equipos financieros confían en Kallibra"
+    },
+    "features": {
+      "title": "Todo lo que necesitas para una conciliación perfecta",
+      "subtitle": "Funcionalidades potentes diseñadas para optimizar tus operaciones financieras y eliminar los dolores de cabeza de la conciliación manual.",
+      "items": {
+        "automation": {
+          "title": "Automatización Inteligente",
+          "description": "Cruza automáticamente transacciones de múltiples fuentes usando algoritmos inteligentes que aprenden de tus patrones."
+        },
+        "security": {
+          "title": "Seguridad Empresarial",
+          "description": "Encriptación de nivel bancario y cumplimiento con SOC 2 Tipo II, GDPR y otros requisitos regulatorios."
+        },
+        "analytics": {
+          "title": "Analíticas Avanzadas",
+          "description": "Dashboards en tiempo real e informes personalizados para rastrear estados, tendencias y anomalías."
+        },
+        "sync": {
+          "title": "Sincronización Multi-Fuente",
+          "description": "Conecta bancos, ERPs, proveedores de pago y fuentes personalizadas con nuestro framework flexible."
+        },
+        "audit": {
+          "title": "Trazabilidad Completa",
+          "description": "Historial completo de transacciones con marcas de tiempo, acciones de usuario y registros detallados."
+        },
+        "realtime": {
+          "title": "Procesamiento en Tiempo Real",
+          "description": "Procesa miles de transacciones por segundo con cruce instantáneo y notificaciones inmediatas."
+        }
+      }
+    },
+    "highlights": {
+      "title": "Por qué los equipos financieros líderes eligen Kallibra",
+      "subtitle": "Descubre cómo nuestra plataforma transforma flujos de conciliación complejos en procesos automatizados.",
+      "analytics": {
+        "title": "Analíticas e Insights Potentes",
+        "description": "Obtén insights accionables con nuestro completo dashboard de analíticas. Rastrea métricas clave, identifica tendencias y toma decisiones basadas en datos.",
+        "mockupTitle": "Dashboard de Analíticas",
+        "metric1": "127% de aumento en eficiencia de conciliación",
+        "metric2": "98.5% de precisión en el cruce de transacciones",
+        "metric3": "45% de reducción en tiempo de procesamiento"
+      },
+      "security": {
+        "title": "Seguridad de Nivel Empresarial",
+        "description": "Tus datos financieros están protegidos con los más altos estándares de seguridad. Implementamos múltiples capas de protección.",
+        "mockupTitle": "Centro de Seguridad",
+        "feature1": "Encriptación AES-256 de nivel bancario",
+        "feature2": "Autenticación multifactor",
+        "feature3": "Registro completo de auditoría"
+      }
+    },
+    "pricing": {
+      "title": "Acceso MVP y Soluciones Personalizadas",
+      "subtitle": "Sé parte de la etapa inicial u obtén un sistema personalizado para tus necesidades.",
+      "beta": {
+        "name": "Kallibra Beta",
+        "price": "Gratis",
+        "priceSubtext": "durante período de prueba",
+        "cta": "Comenzar",
+        "features": {
+          "modules": "Acceso completo a todos los módulos MVP",
+          "clients": "Clientes y facturas ilimitados",
+          "feedback": "Canal directo de feedback",
+          "upgrades": "Actualizaciones automáticas futuras"
+        }
+      },
+      "custom": {
+        "name": "Kallibra Personalizado",
+        "price": "A Medida",
+        "priceSubtext": "según tus necesidades",
+        "cta": "Contactar",
+        "features": {
+          "bespoke": "Desarrollo de características a medida",
+          "dedicated": "Instancia privada dedicada",
+          "earlyBeta": "Incluye acceso Early Beta",
+          "priority": "Soporte prioritario 24/7"
+        }
+      },
+      "questions": "¿Tienes preguntas?",
+      "contact": "Contacta a nuestro equipo"
+    },
+    "registerModal": {
+      "title": "¡Gracias por tu interés!",
+      "description": "Actualmente nos encontramos en una fase exclusiva de Beta MVP. Para garantizar la mejor experiencia, el acceso está restringido a usuarios autorizados. Por favor, selecciona una de las dos opciones a continuación (Kallibra Beta o Kallibra Personalizado) para solicitar tus credenciales directamente al desarrollador mediante nuestros canales de contacto.",
+      "confirm": "Aceptar"
+    },
+    "contactModal": {
+      "title": "Contactar Ventas",
+      "description": "Haz clic en confirmar para enviar un email a nuestro equipo de ventas. Responderemos con una cotización personalizada en 24 horas.",
+      "confirm": "Enviar Email"
+    },
+    "footer": {
+      "tagline": "Conciliación financiera inteligente para negocios modernos.",
+      "developer": {
+        "title": "Desarrollador",
+        "portfolio": "Portafolio"
+      },
+      "resources": {
+        "title": "Recursos",
+        "docs": "Documentación"
+      },
+      "legal": {
+        "title": "Legal",
+        "privacy": "Política de Privacidad",
+        "terms": "Términos de Servicio"
+      },
+      "rights": "Todos los derechos reservados.",
+      "madeWith": "Hecho con",
+      "by": "por"
+    }
+  },
   "auth": {
     "login": {
       "title": "Bienvenido de nuevo",
@@ -25,7 +153,8 @@
       "submit": "Iniciar sesión",
       "submitting": "Iniciando sesión...",
       "noAccount": "¿No tienes una cuenta?",
-      "signUp": "Regístrate aquí"
+      "signUp": "Regístrate aquí",
+      "backToHome": "Volver al Inicio"
     },
     "logout": {
       "button": "Cerrar sesión",
@@ -109,5 +238,95 @@
     "bank": "Banco",
     "paymentProvider": "Proveedor de Pago",
     "erp": "ERP"
+  },
+  "docs": {
+    "header": {
+      "title": "Kallibra Docs",
+      "back": "Volver al Inicio"
+    },
+    "hero": {
+      "title": "Guía de Usuario",
+      "subtitle": "Aprende a sacar el máximo provecho de tu plataforma de conciliación financiera."
+    },
+    "beta": {
+      "title": "Fase Beta MVP",
+      "description": "Actualmente nos encontramos en una fase exclusiva de Beta. Esta documentación refleja las funcionalidades activas y la visión a corto plazo del producto."
+    },
+    "gettingStarted": {
+      "title": "Comenzando",
+      "access": {
+        "title": "Acceso a la Plataforma",
+        "description": "Kallibra opera actualmente bajo un modelo de acceso restringido para garantizar la calidad del servicio durante nuestra fase Beta.",
+        "public": "Usuarios Públicos",
+        "publicDesc": "Pueden solicitar acceso a través del botón \"Solicitar Acceso\" en nuestra página principal.",
+        "b2b": "Usuarios B2B/Enterprise",
+        "b2bDesc": "Ofrecemos instancias personalizadas. Contacta directamente para una demostración."
+      },
+      "firstSteps": {
+        "title": "Primeros Pasos",
+        "step1": "Dirígete a la página de Login.",
+        "step2": "Ingresa tu correo y contraseña provistos.",
+        "step3": "Accederás inmediatamente a tu Dashboard Principal."
+      }
+    },
+    "features": {
+      "title": "Características Principales",
+      "dashboard": {
+        "title": "Dashboard Inteligente",
+        "description": "Tu centro de control financiero con visión instantánea del estado de conciliación.",
+        "item1": "Métricas clave de volumen y estado",
+        "item2": "Gráficos de distribución de datos",
+        "item3": "Monitor de actividad reciente"
+      },
+      "transactions": {
+        "title": "Explorador de Transacciones",
+        "description": "Herramienta potente para análisis detallado con filtros avanzados.",
+        "item1": "Vista tabular detallada",
+        "item2": "Filtros por fuente, estado y monto",
+        "item3": "Búsqueda rápida por referencia"
+      },
+      "reconciliation": {
+        "title": "Conciliación Asistida",
+        "description": "Olvídate de buscar coincidencias manualmente. Al seleccionar una transacción pendiente, Kallibra analiza tus datos y te sugiere posibles coincidencias basadas en monto, fecha y referencia.",
+        "tag1": "Sugerencias Automáticas",
+        "tag2": "Acción Rápida"
+      }
+    },
+    "roadmap": {
+      "title": "El Futuro (Roadmap)",
+      "ai": { "title": "Automatización IA", "desc": "Aprobación automática de patrones aprendidos." },
+      "api": { "title": "Conectores API", "desc": "Integración nativa con Stripe, Plaid, SAP." },
+      "reports": { "title": "Reportes", "desc": "Informes PDF/Excel para auditoría." },
+      "roles": { "title": "Roles y Permisos", "desc": "Gestión granular para equipos." }
+    },
+    "support": {
+      "title": "¿Necesitas ayuda adicional?",
+      "description": "Estamos aquí para ayudarte. Si encuentras un error o tienes una sugerencia, contáctanos directamente.",
+      "github": "Reportar en GitHub",
+      "email": "Contactar Soporte"
+    }
+  },
+  "legal": {
+    "backHome": "Volver al inicio",
+    "privacy": {
+      "title": "Política de Privacidad",
+      "lastUpdated": "Última actualización: Febrero 2026",
+      "sections": {
+        "collection": { "title": "1. Información que Recopilamos", "content": "Recopilamos la información que nos proporcionas directamente, como cuando creas una cuenta, utilizas nuestros servicios o te pones en contacto con nosotros para recibir asistencia." },
+        "usage": { "title": "2. Cómo Utilizamos tu Información", "content": "Utilizamos la información que recopilamos para proporcionar, mantener y mejorar nuestros servicios, procesar transacciones y comunicarnos contigo." },
+        "security": { "title": "3. Seguridad de los Datos", "content": "Implementamos medidas técnicas y organizativas adecuadas para proteger tus datos personales contra el acceso, alteración, divulgación o destrucción no autorizados." },
+        "contact": { "title": "4. Contáctanos", "content": "Si tienes alguna pregunta sobre esta Política de Privacidad, contáctanos en privacy@kallibra.app" }
+      }
+    },
+    "terms": {
+      "title": "Términos de Servicio",
+      "lastUpdated": "Última actualización: Febrero 2026",
+      "sections": {
+        "acceptance": { "title": "1. Aceptación de los Términos", "content": "Al acceder y utilizar Kallibra, aceptas y acuerdas estar sujeto a los términos y disposiciones de este acuerdo." },
+        "license": { "title": "2. Licencia de Uso", "content": "Se concede permiso para acceder temporalmente a los materiales en Kallibra solo para visualización transitoria personal y no comercial." },
+        "disclaimer": { "title": "3. Descargo de Responsabilidad", "content": "Los materiales en Kallibra se proporcionan 'tal cual'. Kallibra no ofrece garantías, expresas o implícitas." },
+        "limitations": { "title": "4. Limitaciones", "content": "En ningún caso Kallibra o sus proveedores serán responsables de ningún daño derivado del uso o la imposibilidad de uso de los materiales." }
+      }
+    }
   }
 }

@@ -10,6 +10,134 @@
     "error": "Error",
     "success": "Success"
   },
+  "landing": {
+    "nav": {
+      "home": "Home",
+      "features": "Features",
+      "highlights": "Highlights",
+      "pricing": "Pricing",
+      "login": "Login",
+      "register": "Request Access"
+    },
+    "hero": {
+      "badge": "New Release Available",
+      "titleLight": "Simplify your",
+      "titleBold": "Financial Reconciliation",
+      "description": "Automate transaction matching, eliminate manual errors, and gain real-time insights into your financial operations with our powerful reconciliation platform.",
+      "ctaPrimary": "Get Started",
+      "ctaSecondary": "Learn More",
+      "trustedBy": "finance teams trust Kallibra"
+    },
+    "features": {
+      "title": "Everything you need for seamless reconciliation",
+      "subtitle": "Powerful features designed to streamline your financial operations and eliminate manual reconciliation headaches.",
+      "items": {
+        "automation": {
+          "title": "Smart Automation",
+          "description": "Automatically match transactions across multiple sources using intelligent algorithms that learn from your patterns."
+        },
+        "security": {
+          "title": "Enterprise Security",
+          "description": "Bank-grade encryption and compliance with SOC 2 Type II, GDPR, and other regulatory requirements."
+        },
+        "analytics": {
+          "title": "Advanced Analytics",
+          "description": "Real-time dashboards and custom reports to track reconciliation status, trends, and anomalies."
+        },
+        "sync": {
+          "title": "Multi-Source Sync",
+          "description": "Connect banks, ERPs, payment providers, and custom sources with our flexible integration framework."
+        },
+        "audit": {
+          "title": "Complete Audit Trail",
+          "description": "Full transaction history with timestamps, user actions, and detailed change logs for compliance."
+        },
+        "realtime": {
+          "title": "Real-Time Processing",
+          "description": "Process thousands of transactions per second with instant matching and instant notifications."
+        }
+      }
+    },
+    "highlights": {
+      "title": "Why leading finance teams choose Kallibra",
+      "subtitle": "See how our platform transforms complex reconciliation workflows into streamlined, automated processes.",
+      "analytics": {
+        "title": "Powerful Analytics & Insights",
+        "description": "Get actionable insights with our comprehensive analytics dashboard. Track key metrics, identify trends, and make data-driven decisions to optimize your financial operations.",
+        "mockupTitle": "Analytics Dashboard",
+        "metric1": "127% increase in reconciliation efficiency",
+        "metric2": "98.5% transaction matching accuracy",
+        "metric3": "45% reduction in processing time"
+      },
+      "security": {
+        "title": "Enterprise-Grade Security",
+        "description": "Your financial data is protected with the highest security standards. We implement multiple layers of protection to ensure your data remains safe and compliant.",
+        "mockupTitle": "Security Center",
+        "feature1": "Bank-grade AES-256 encryption",
+        "feature2": "Multi-factor authentication",
+        "feature3": "Complete audit logging"
+      }
+    },
+    "pricing": {
+      "title": "MVP Access & Custom Solutions",
+      "subtitle": "Be part of the early stage or get a tailored system for your needs.",
+      "beta": {
+        "name": "Kallibra Beta",
+        "price": "Free",
+        "priceSubtext": "during test period",
+        "cta": "Get Started",
+        "features": {
+          "modules": "Full access to all MVP modules",
+          "clients": "Unlimited clients & invoices",
+          "feedback": "Direct feedback channel",
+          "upgrades": "Automated future upgrades"
+        }
+      },
+      "custom": {
+        "name": "Custom Kallibra",
+        "price": "Tailored",
+        "priceSubtext": "to your needs",
+        "cta": "Contact",
+        "features": {
+          "bespoke": "Bespoke feature development",
+          "dedicated": "Dedicated private instance",
+          "earlyBeta": "Includes Early Beta access",
+          "priority": "24/7 Priority support"
+        }
+      },
+      "questions": "Have questions?",
+      "contact": "Contact our team"
+    },
+    "registerModal": {
+      "title": "Thank you for your interest!",
+      "description": "We are currently in an exclusive MVP Beta phase. To ensure the best experience, access is restricted to authorized users. Please select one of the two options below (Kallibra Beta or Custom Kallibra) to request your credentials directly from the developer via our contact channels.",
+      "confirm": "Accept"
+    },
+    "contactModal": {
+      "title": "Contact Sales",
+      "description": "Click confirm to send an email to our sales team. We'll respond with a personalized quote within 24 hours.",
+      "confirm": "Send Email"
+    },
+    "footer": {
+      "tagline": "Intelligent financial reconciliation for modern businesses.",
+      "developer": {
+        "title": "Developer",
+        "portfolio": "Portfolio"
+      },
+      "resources": {
+        "title": "Resources",
+        "docs": "Documentation"
+      },
+      "legal": {
+        "title": "Legal",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service"
+      },
+      "rights": "All rights reserved.",
+      "madeWith": "Made with",
+      "by": "by"
+    }
+  },
   "auth": {
     "login": {
       "title": "Welcome back",
@@ -25,7 +153,8 @@
       "submit": "Sign in",
       "submitting": "Signing in...",
       "noAccount": "Don't have an account?",
-      "signUp": "Sign up here"
+      "signUp": "Sign up here",
+      "backToHome": "Back to Home"
     },
     "logout": {
       "button": "Logout",
@@ -109,5 +238,95 @@
     "bank": "Bank",
     "paymentProvider": "Payment Provider",
     "erp": "ERP"
+  },
+  "docs": {
+    "header": {
+      "title": "Kallibra Docs",
+      "back": "Back to Home"
+    },
+    "hero": {
+      "title": "User Guide",
+      "subtitle": "Learn how to get the most out of your financial reconciliation platform."
+    },
+    "beta": {
+      "title": "MVP Beta Phase",
+      "description": "We are currently in an exclusive Beta phase. This documentation reflects active features and the short-term product vision."
+    },
+    "gettingStarted": {
+      "title": "Getting Started",
+      "access": {
+        "title": "Platform Access",
+        "description": "Kallibra currently operates under a restricted access model to ensure service quality during our Beta phase.",
+        "public": "Public Users",
+        "publicDesc": "Can request access via the \"Request Access\" button on our homepage.",
+        "b2b": "B2B/Enterprise Users",
+        "b2bDesc": "We offer custom instances. Contact us directly for a demo."
+      },
+      "firstSteps": {
+        "title": "First Steps",
+        "step1": "Go to the Login page.",
+        "step2": "Enter your provided email and password.",
+        "step3": "You will immediately access your Main Dashboard."
+      }
+    },
+    "features": {
+      "title": "Key Features",
+      "dashboard": {
+        "title": "Smart Dashboard",
+        "description": "Your financial control center with instant visibility of reconciliation status.",
+        "item1": "Key volume and status metrics",
+        "item2": "Data distribution charts",
+        "item3": "Recent activity monitor"
+      },
+      "transactions": {
+        "title": "Transaction Explorer",
+        "description": "Powerful tool for detailed analysis with advanced filters.",
+        "item1": "Detailed tabular view",
+        "item2": "Filters by source, status, and amount",
+        "item3": "Quick search by reference"
+      },
+      "reconciliation": {
+        "title": "Assisted Reconciliation",
+        "description": "Forget about manually searching for matches. By selecting a pending transaction, Kallibra analyzes your data and suggests potential matches based on amount, date, and reference.",
+        "tag1": "Automatic Suggestions",
+        "tag2": "Quick Action"
+      }
+    },
+    "roadmap": {
+      "title": "The Future (Roadmap)",
+      "ai": { "title": "AI Automation", "desc": "Automatic approval of learned patterns." },
+      "api": { "title": "API Connectors", "desc": "Native integration with Stripe, Plaid, SAP." },
+      "reports": { "title": "Reports", "desc": "PDF/Excel reports for auditing." },
+      "roles": { "title": "Roles & Permissions", "desc": "Granular management for teams." }
+    },
+    "support": {
+      "title": "Need additional help?",
+      "description": "We are here to help. If you find a bug or have a suggestion, contact us directly.",
+      "github": "Report on GitHub",
+      "email": "Contact Support"
+    }
+  },
+  "legal": {
+    "backHome": "Back to Home",
+    "privacy": {
+      "title": "Privacy Policy",
+      "lastUpdated": "Last updated: February 2026",
+      "sections": {
+        "collection": { "title": "1. Information We Collect", "content": "We collect information you provide directly to us, such as when you create an account, use our services, or contact us for support." },
+        "usage": { "title": "2. How We Use Your Information", "content": "We use the information we collect to provide, maintain, and improve our services, process transactions, and communicate with you." },
+        "security": { "title": "3. Data Security", "content": "We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction." },
+        "contact": { "title": "4. Contact Us", "content": "If you have any questions about this Privacy Policy, please contact us at privacy@kallibra.app" }
+      }
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "lastUpdated": "Last updated: February 2026",
+      "sections": {
+        "acceptance": { "title": "1. Acceptance of Terms", "content": "By accessing and using Kallibra, you accept and agree to be bound by the terms and provisions of this agreement." },
+        "license": { "title": "2. Use License", "content": "Permission is granted to temporarily access the materials on Kallibra for personal, non-commercial transitory viewing only." },
+        "disclaimer": { "title": "3. Disclaimer", "content": "The materials on Kallibra are provided on an 'as is' basis. Kallibra makes no warranties, expressed or implied." },
+        "limitations": { "title": "4. Limitations", "content": "In no event shall Kallibra or its suppliers be liable for any damages arising out of the use or inability to use the materials." }
+      }
+    }
   }
 }
