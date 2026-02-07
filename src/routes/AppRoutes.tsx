@@ -1,9 +1,14 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { BrowserRouter, Routes, Route, Navigate, Link } from 'react-router-dom';
 import { LoginPage, useAuth } from '../features/auth';
 import { DashboardPage } from '../features/dashboard';
 import { LandingPage, DocsPage } from '../features/landing';
+
 import { ScrollToTop } from '@/shared/components/ScrollToTop';
+import { LanguageSwitcher } from '@/shared/components';
+import { Button } from '@/shared/components/button';
+import { ArrowLeft } from 'lucide-react';
 
 
 // 404 Page
@@ -16,62 +21,83 @@ const NotFoundPage: React.FC = () => (
 );
 
 // Simple Legal Page Component
-const LegalPage: React.FC<{ title: string; content: React.ReactNode }> = ({ title, content }) => (
-  <div className="min-h-screen bg-background">
-    <header className="border-b border-border py-4">
-      <div className="max-w-3xl mx-auto px-6">
-        <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-          <img src="/logo.svg" alt="Kallibra Logo" className="h-8 w-8" />
-          <span className="text-xl font-bold text-foreground">Kallibra</span>
-        </Link>
-      </div>
-    </header>
-    <main className="max-w-3xl mx-auto px-6 py-12">
-      <h1 className="text-3xl font-bold text-foreground mb-8">{title}</h1>
-      <div className="prose prose-gray dark:prose-invert max-w-none text-muted-foreground space-y-4">
-        {content}
-      </div>
-    </main>
-  </div>
-);
+const LegalPage: React.FC<{ title: string; content: React.ReactNode }> = ({ title, content }) => {
+  const { t } = useTranslation();
 
-const PrivacyPage: React.FC = () => (
-  <LegalPage 
-    title="Privacy Policy"
-    content={
-      <>
-        <p>Last updated: February 2026</p>
-        <h2 className="text-xl font-semibold text-foreground mt-6 mb-3">1. Information We Collect</h2>
-        <p>We collect information you provide directly to us, such as when you create an account, use our services, or contact us for support.</p>
-        <h2 className="text-xl font-semibold text-foreground mt-6 mb-3">2. How We Use Your Information</h2>
-        <p>We use the information we collect to provide, maintain, and improve our services, process transactions, and communicate with you.</p>
-        <h2 className="text-xl font-semibold text-foreground mt-6 mb-3">3. Data Security</h2>
-        <p>We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction.</p>
-        <h2 className="text-xl font-semibold text-foreground mt-6 mb-3">4. Contact Us</h2>
-        <p>If you have any questions about this Privacy Policy, please contact us at privacy@kallibra.app</p>
-      </>
-    }
-  />
-);
+  return (
+    <div className="min-h-screen bg-background">
+      <header className="border-b border-border py-4">
+        <div className="max-w-3xl mx-auto px-6 flex items-center justify-between">
+          <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+            <img src="/logo.svg" alt="Kallibra Logo" className="h-8 w-8" />
+            <span className="text-xl font-bold text-foreground">Kallibra</span>
+          </Link>
+          <div className="flex items-center gap-4">
+            <LanguageSwitcher />
+            <Button variant="ghost" size="sm" asChild>
+              <Link to="/" className="flex items-center gap-2">
+                <ArrowLeft className="h-4 w-4" />
+                <span className="hidden sm:inline">{t('legal.backHome')}</span>
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </header>
+      <main className="max-w-3xl mx-auto px-6 py-12">
+        <h1 className="text-3xl font-bold text-foreground mb-8">{title}</h1>
+        <div className="prose prose-gray dark:prose-invert max-w-none text-muted-foreground space-y-4">
+          {content}
+        </div>
+      </main>
+    </div>
+  );
+};
 
-const TermsPage: React.FC = () => (
-  <LegalPage 
-    title="Terms of Service"
-    content={
-      <>
-        <p>Last updated: February 2026</p>
-        <h2 className="text-xl font-semibold text-foreground mt-6 mb-3">1. Acceptance of Terms</h2>
-        <p>By accessing and using Kallibra, you accept and agree to be bound by the terms and provisions of this agreement.</p>
-        <h2 className="text-xl font-semibold text-foreground mt-6 mb-3">2. Use License</h2>
-        <p>Permission is granted to temporarily access the materials on Kallibra for personal, non-commercial transitory viewing only.</p>
-        <h2 className="text-xl font-semibold text-foreground mt-6 mb-3">3. Disclaimer</h2>
-        <p>The materials on Kallibra are provided on an 'as is' basis. Kallibra makes no warranties, expressed or implied.</p>
-        <h2 className="text-xl font-semibold text-foreground mt-6 mb-3">4. Limitations</h2>
-        <p>In no event shall Kallibra or its suppliers be liable for any damages arising out of the use or inability to use the materials.</p>
-      </>
-    }
-  />
-);
+const PrivacyPage: React.FC = () => {
+  const { t } = useTranslation();
+
+  return (
+    <LegalPage 
+      title={t('legal.privacy.title')}
+      content={
+        <>
+          <p>{t('legal.privacy.lastUpdated')}</p>
+          <h2 className="text-xl font-semibold text-foreground mt-6 mb-3">{t('legal.privacy.sections.collection.title')}</h2>
+          <p>{t('legal.privacy.sections.collection.content')}</p>
+          <h2 className="text-xl font-semibold text-foreground mt-6 mb-3">{t('legal.privacy.sections.usage.title')}</h2>
+          <p>{t('legal.privacy.sections.usage.content')}</p>
+          <h2 className="text-xl font-semibold text-foreground mt-6 mb-3">{t('legal.privacy.sections.security.title')}</h2>
+          <p>{t('legal.privacy.sections.security.content')}</p>
+          <h2 className="text-xl font-semibold text-foreground mt-6 mb-3">{t('legal.privacy.sections.contact.title')}</h2>
+          <p>{t('legal.privacy.sections.contact.content')}</p>
+        </>
+      }
+    />
+  );
+};
+
+const TermsPage: React.FC = () => {
+  const { t } = useTranslation();
+
+  return (
+    <LegalPage 
+      title={t('legal.terms.title')}
+      content={
+        <>
+          <p>{t('legal.terms.lastUpdated')}</p>
+          <h2 className="text-xl font-semibold text-foreground mt-6 mb-3">{t('legal.terms.sections.acceptance.title')}</h2>
+          <p>{t('legal.terms.sections.acceptance.content')}</p>
+          <h2 className="text-xl font-semibold text-foreground mt-6 mb-3">{t('legal.terms.sections.license.title')}</h2>
+          <p>{t('legal.terms.sections.license.content')}</p>
+          <h2 className="text-xl font-semibold text-foreground mt-6 mb-3">{t('legal.terms.sections.disclaimer.title')}</h2>
+          <p>{t('legal.terms.sections.disclaimer.content')}</p>
+          <h2 className="text-xl font-semibold text-foreground mt-6 mb-3">{t('legal.terms.sections.limitations.title')}</h2>
+          <p>{t('legal.terms.sections.limitations.content')}</p>
+        </>
+      }
+    />
+  );
+};
 
 // Protected Route Component
 interface ProtectedRouteProps {

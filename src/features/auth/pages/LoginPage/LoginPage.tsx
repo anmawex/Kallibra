@@ -1,4 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { ArrowLeft } from 'lucide-react';
+import { Button } from '@/shared/components/button';
 import { LoginForm } from '../../components';
 import { LanguageSwitcher } from '@/shared/components';
 import { ThemeToggle } from '@/shared/theme';
@@ -11,6 +14,16 @@ export const LoginPage: React.FC = () => {
         <div className="login-page-gradient login-page-gradient-1"></div>
         <div className="login-page-gradient login-page-gradient-2"></div>
         <div className="login-page-gradient login-page-gradient-3"></div>
+      </div>
+
+      {/* Back to Home Button */}
+      <div className="absolute top-4 left-4 z-50">
+        <Button variant="ghost" size="sm" asChild className="text-muted-foreground hover:text-foreground">
+          <Link to="/" className="flex items-center gap-2">
+            <ArrowLeft className="h-4 w-4" />
+            <span className="hidden sm:inline">Volver al Inicio</span>
+          </Link>
+        </Button>
       </div>
 
       {/* Settings buttons in top right corner */}

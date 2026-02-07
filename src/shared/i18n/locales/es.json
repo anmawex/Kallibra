@@ -305,5 +305,28 @@
       "github": "Reportar en GitHub",
       "email": "Contactar Soporte"
     }
+  },
+  "legal": {
+    "backHome": "Volver al inicio",
+    "privacy": {
+      "title": "Política de Privacidad",
+      "lastUpdated": "Última actualización: Febrero 2026",
+      "sections": {
+        "collection": { "title": "1. Información que Recopilamos", "content": "Recopilamos la información que nos proporcionas directamente, como cuando creas una cuenta, utilizas nuestros servicios o te pones en contacto con nosotros para recibir asistencia." },
+        "usage": { "title": "2. Cómo Utilizamos tu Información", "content": "Utilizamos la información que recopilamos para proporcionar, mantener y mejorar nuestros servicios, procesar transacciones y comunicarnos contigo." },
+        "security": { "title": "3. Seguridad de los Datos", "content": "Implementamos medidas técnicas y organizativas adecuadas para proteger tus datos personales contra el acceso, alteración, divulgación o destrucción no autorizados." },
+        "contact": { "title": "4. Contáctanos", "content": "Si tienes alguna pregunta sobre esta Política de Privacidad, contáctanos en privacy@kallibra.app" }
+      }
+    },
+    "terms": {
+      "title": "Términos de Servicio",
+      "lastUpdated": "Última actualización: Febrero 2026",
+      "sections": {
+        "acceptance": { "title": "1. Aceptación de los Términos", "content": "Al acceder y utilizar Kallibra, aceptas y acuerdas estar sujeto a los términos y disposiciones de este acuerdo." },
+        "license": { "title": "2. Licencia de Uso", "content": "Se concede permiso para acceder temporalmente a los materiales en Kallibra solo para visualización transitoria personal y no comercial." },
+        "disclaimer": { "title": "3. Descargo de Responsabilidad", "content": "Los materiales en Kallibra se proporcionan 'tal cual'. Kallibra no ofrece garantías, expresas o implícitas." },
+        "limitations": { "title": "4. Limitaciones", "content": "En ningún caso Kallibra o sus proveedores serán responsables de ningún daño derivado del uso o la imposibilidad de uso de los materiales." }
+      }
+    }
   }
 }
